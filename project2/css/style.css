@@ -1,0 +1,237 @@
+/* css reset  */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css variables  */
+:root {
+  --navbar-height: 59px;
+}
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+/* Navigation Bar: list styling */
+
+#navbar ul {
+  display: flex;
+}
+#navbar ul li {
+  font-family: "Kanit", sans-serif;
+  list-style: none;
+  font-size: 1.2rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+/* Navigation Bar: logo and image */
+
+#logo {
+  margin: 10px 30px;
+}
+#logo img {
+  height: 50px;
+  margin: 8px 30px;
+  filter: invert();
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 190px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background-image: url("/img/bg1.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: absolute;
+  height: 85%;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.82;
+}
+#home h1 {
+  font-family: "Lobster", cursive;
+  text-align: center;
+}
+#home p {
+  color: rgb(255, 255, 255);
+  font-family: "Kanit", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+}
+/* services section */
+/* .services-container{
+    margin: 100px;
+} */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 33px;
+  margin: 3px 50px;
+  border-radius: 25px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 160px;
+}
+#services .box p {
+  font-family: "Kanit", sans-serif;
+}
+#services {
+}
+#services {
+}
+#services {
+}
+
+/* Client section */
+#client-section {
+  height: 344px;
+  /* margin-top: 5px; */
+  
+}
+
+#client-section::before {
+  content: "";
+  background-image: url("/img/bg2.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  position: absolute;
+  height: 50%;
+  /* top: 0px; */
+  /* left: 0px; */
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 35px;
+}
+
+#clients img {
+  height: 115px;
+}
+
+/* contact section  */
+#contact{
+    position: relative;
+    margin-top: 3px; 
+}
+
+#contact::before{
+    content: "";
+    background-image: url("/img/contact.jpg");
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-position: center; /* Center the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    position: absolute;
+    height: 100%;
+    /* top: 0px;
+    left: 0px; */
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    
+
+}
+
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: "Kanit", sans-serif;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+.h-primary {
+  font-family: "Kanit", sans-serif;
+  font-size: 2.8rem;
+  padding: 5px;
+  /* margin:180px ; */
+}
+.h-secondary {
+  font-family: "Kanit", sans-serif;
+  font-size: 1.4rem;
+  padding: 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  border-radius: 20px;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
